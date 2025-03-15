@@ -17,15 +17,50 @@ Part 2:
     "© 20xx <last name here> development. All rights reserved."
  */
 
+function Header(){
+    return (
+        <header>
+            <img src="react-logo.png" width="40px" alt="react logo"/>
+        </header>
+    )
+}
 
+function Main(){
+    return(
+        <main>
+            <h1>Reasons I'm excited to learn React</h1>
+            <ol>
+                <li>I want to become Full Stack developer!</li>
+                <li>I am more likely to landed a full stack intern</li>
+            </ol>
+        </main>
+    )
+}
+
+function Footer(){
+    return (
+        <footer>
+            © 20xx Chong development. All rights reserved.
+        </footer>
+    )
+}
 function Page() {
     return (
-        <ol>
-            <li>React is a popular library, so I will be able to
-            fit in with all the coolest devs out there! 😎</li>
-            <li>I am more likely to get a job as a front end developer
-            if I know React</li>
-        </ol>
+        <div>
+            <header>
+                <img src="react-logo.png" width="40px" alt="react logo"/>
+            </header>
+            <main>
+                <h1>Reasons I'm excited to learn React</h1>
+                <ol>
+                    <li>I want to become Full Stack developer!</li>
+                    <li>I am more likely to landed a full stack intern</li>
+                </ol>
+            </main>
+            <footer>
+                © 20xx Chong development. All rights reserved.
+            </footer>
+        </div>
     )
 }
 

@@ -12,5 +12,15 @@ const root = createRoot(document.getElementById("root"))
  */
 
 root.render(
-    
+    <OrderList/>
 )
+
+function OrderList(){
+    return(
+        <ul>
+            <li>I want to become Full stack developer!</li>
+            <li>I want to do full stack project</li>
+            <li>I want to be freelancer</li>
+        </ul>
+    )
+}
