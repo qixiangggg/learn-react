@@ -9,8 +9,13 @@
  *   colors, sizes, font information, etc.
  */
 
-export default function Navbar() {
+export default function NavBar() {
     return (
-        <h1>Navbar component here</h1>
+        <header>
+            <nav>
+                <img src="../react-logo.png"/>
+                <span>ReactFacts</span>
+            </nav>
+        </header>
     )
 }
