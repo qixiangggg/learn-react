@@ -1,5 +1,6 @@
 html, body {
     margin: 0;
+    font-family: Inter;
 }
 
 header {
@@ -20,4 +21,49 @@ header > h1 {
     font-size: 0.9rem;
     font-weight: 500;
     font-family: Inter;
+}
+
+article.journal-entry{
+    display:flex;
+    margin:40px;
+    align-items: center;
+    padding: 0;
+ }
+
+.landscape{
+    width: 125px;
+    height: 168px;
+    border-radius: 4px;
+    margin-right: 19px;
+ }
+
+ .location{
+    font-size: 10px;
+ }
+
+ .location > img{
+    width: 7px;
+ }
+
+ .location > span{
+    margin-left: 4px;
+    margin-right: 12px;
+ }
+
+ .location > a{
+    color: #918E9B;
+ }
+
+.description > h2{
+    font-size: 25px;
+    margin: 0;
+}
+
+.description > h3{
+    font-size: 10px;
+    margin-top: 17px;
+}
+
+.description > p {
+    font-size: 10px;
 }
