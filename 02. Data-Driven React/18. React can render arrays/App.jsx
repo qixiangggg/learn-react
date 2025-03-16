@@ -7,7 +7,7 @@ export default function App() {
      * JSX elements by surrounding each ninja turtle with an <h2> element
      */
     
-    const ninjaTurtles = ["Donatello", "Michaelangelo", "Rafael", "Leonardo"]
+    const ninjaTurtles = [<h1>Donatello</h1>, <h2>Michaelangelo</h2>, <p>Rafael</p>, <span>Leonardo</span>]
     return (
         <main>
             {ninjaTurtles}
