@@ -15,8 +15,11 @@ function App() {
       <img
         src="https://picsum.photos/640/360"
         alt="Placeholder image from Picsum"
+        onMouseOver={
+          ()=> console.log("I was hovered!")
+        }
       />
-      <button onClick={}>Click me</button>
+      <button onClick={handleClick}>Click me</button>
     </main>
   )
 }
