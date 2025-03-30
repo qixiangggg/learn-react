@@ -12,14 +12,15 @@ export default function App() {
      * Pass that function down to each of the Pad components
      * and set it up so when they get clicked, the function runs
      */
-    
-    const buttonElements = pads.map(pad => (
-        <Pad key={pad.id} color={pad.color} on={pad.on}/>
-    ))
-    
     function toggle(){
         console.log("clicked!")
     }
+
+    const buttonElements = pads.map(pad => (
+        <Pad key={pad.id} color={pad.color} on={pad.on} handleClick={toggle}/>
+    ))
+    
+    
     return (
         <main>
             <div className="pad-container">

@@ -6,7 +6,9 @@ export default function App() {
     const [pads, setPads] = React.useState(padsData)
     
     function toggle(id) {
-        console.log(id)
+        setPads(prevPads => prevPads.map(prevPad => 
+            prevPad.id === id ? {...prevPad,on:!prevPad.on} : {...prevPad,on:prevPad.on}
+        ))
         /**
          * Challenge:
          * Call setPads to update the state of the one pad that was
