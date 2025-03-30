@@ -12,14 +12,12 @@ export default function App() {
      * which you can then use to determine your new
      * value of state.
      */
-    function add() {
-        setCount(prevCount=> prevCount + 1)
+    function add(){
+        setCount(prevCount => prevCount + 1)
     }
-    
-    // Challenge: update `substract` to use a callback function
 
-    function subtract() {
-        setCount(count - 1)
+    function subtract(){
+        setCount(prevCount => prevCount - 1)
     }
 
     return (
