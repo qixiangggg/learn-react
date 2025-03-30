@@ -17,6 +17,9 @@ export default function App() {
         <Pad key={pad.id} color={pad.color} on={pad.on}/>
     ))
     
+    function toggle(){
+        console.log("clicked!")
+    }
     return (
         <main>
             <div className="pad-container">
