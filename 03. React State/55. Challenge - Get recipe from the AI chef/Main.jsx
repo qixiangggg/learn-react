@@ -1,6 +1,7 @@
 import React from "react"
 import IngredientsList from "./components/IngredientsList"
 import ClaudeRecipe from "./components/ClaudeRecipe"
+import ReactMarkdown from 'react-markdown'
 import { getRecipeFromMistral } from "./ai"
 
 export default function Main() {
