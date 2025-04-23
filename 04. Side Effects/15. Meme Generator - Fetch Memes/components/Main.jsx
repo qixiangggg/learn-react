@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import { useEffect } from "react"
 export default function Main() {
     const [meme, setMeme] = useState({
         topText: "One does not simply",
@@ -22,7 +22,12 @@ export default function Main() {
      * Instead, use `.then()` to resolve the promises
      * from using `fetch`. We'll learn why after this challenge.
      */
-    
+    const [memeArray,setMemeArray] = useState([])
+    useEffect(() => {
+        fetch("https://api.imgflip.com/get_memes")
+            .then(res => res.json())
+            .then(data => setMemeArray(data.data.memes))
+    },[])
     
     
     function handleChange(event) {
